@@ -3,280 +3,192 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
-    display: grid;
-    width: 100%;
-    height: 60px;
-    align-items: center;
-}
 body{
-    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
-font-weight: 400;
-line-height: 1.5;
-
+    font-family: sans-serif ;
+    line-height:25px;
 }
-.nav-bar{
-    width: 100%;
+nav{
+    width:100%;
+    height:3.5rem;
+    padding:0 7%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;  
+    letter-spacing: 1px;
+}
+.head ul{
+    display:flex;
+    gap: 30px;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+.head ul a{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.774);
+}
+.head ul a:hover{
+    text-decoration:underline;
+    color: black;
+}
+.head img{
+    width:5.8rem;
+    height:1.3rem;
+}
+.section{ 
+    height:65vh;  
+    background-repeat: no-repeat;
+    background-position:0cm;
+    background-size: cover;
+}
+.a{
+    width:100%; 
+    background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-9-M1-Family-02-1:VP5-1920x600");
+}
+.one{  
+    width:30%; 
+    float:right;
+    margin:120px;
+    color:rgba(0, 0, 0, 0.784)
+}
+.part p{
+    font-size:0.8rem;
+    letter-spacing: 1px;
+    padding:25px 0;   
+}
+.part h1{
+    font-size: 2.1rem;
+    font-weight: 550;
+    line-height: 3rem;
+}
+.part button{
+    width:6rem;
+    height:2.3rem;
+    background-color: #05619a;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+.two{
+    position: relative;
+    width:100%;
+    padding-top:45px;
+    display: flex;
+    gap:30px;
+    justify-content: center;
+}
+.two i{
+     color: black;
+}
+.section2{
+    width:100%;
     height: 40%;
-display: flex;
-font-size: small;
-background-color: aq;
-}
-.logo{
-    width: 20%;
-    display: grid;
-    align-items: center;
-    justify-content: right;
-    padding-right: 2em;
-}
-
-ul{
-    list-style-type:none;
-}
-.menu-left{
-    align-items: center;
-    width: 40%;
+    text-align: center;
     display: flex;
-    justify-content: center;  
-    align-items: center;  
-    gap: 2rem;
+    justify-content: space-evenly;
+    padding:0 25%;
+    margin-top: 135px;
+    font-size: 0.8rem;
 }
-
-.menu-right{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    gap: 1.5em;
-    width: 38%;
+.section2 a{
+    color: #05619a;
 }
-.decor{
+.div a{
+    color: #05619a;
     text-decoration: none;
+}
+.div a:hover{
+    text-decoration: underline;
+}
+.div{
+    width:100%;
+    height:60%;
+}
+.div table{
+    width:80%;
+    margin:70px auto;
+    font-size: 1rem;
+}
+.div table td{
+    padding:12px 20px 0 0;
+}
+.div table img{
+    width:18rem;
+    height:10rem;
+}
+.b{
+    width:90%;
+    background-image: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XGP-Highlight-Ultimate-1PP-Evergreen-Keyart-FY22:VP5-1596x600");
+    margin:0 auto;
+}
+.three{
+        width:30%;
+        float:left;
+        margin:100px;
+        color:white;
+}
+.business h1{
+   margin: 100px 0 -60px 72px; 
+}
+.div i{
+    font-size: 0.8rem;
+    color:#05619a;
+}
+.business .last{
+    padding:70px;
+}
+.business button{
+    float:right;
+    background-color: grey;
+    width:6.5rem;
+    height:2.3rem;
+    border: none;
+}
+.business button a{
+    color:black;
+    text-decoration: none;
+}
+.business span{
+    padding-right: 20px;
+}
+.last span i{
+    font-size: 1.3rem;
     color: black;
 }
-.menu-right li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+footer{
+    width:100%;
+    height:60vh;
+    background-color: rgba(239, 236, 236, 0.789);
 }
-.fa-user-circle{
-    padding-right:4em;
+footer table{
+    width:80%;
+    margin: 20px auto 0;
+    font-size: 0.7rem;
+    text-align: left;
+    padding-top: 40px;
+    line-height: 1.8rem;
 }
-.text-microsoft i{
-    padding-left: 10px;
-}
-.main{
-    position: relative;
-    width: 100%;
-}
-.main img{
-    width:100vw;
-}
-.image1{
-    position: absolute;
-    top: 30%;
-    left: 60%;
+footer table th{
+    font-size: 1rem;
+    color:rgba(20, 19, 19, 0.655);
 
 }
-.learn-more{
-    position: absolute;
-    border: 1px solid black;
-    margin-top: 10px;
-    background-color: #0067B8;
-    color: white;
-    font-weight: 600;
-    padding: 10px;
-    border-radius: 4%;
-}
-.Products{
-    margin-top: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2em;
-}
-.Products div{
-    font-weight: 600;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-}
-.Products2{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    margin-top: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.list{
-    width: 100%;
-    word-wrap: break-word;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    position: relative;
-    word-wrap: break-word;
-    
-}
-.list p{
-    display: grid;
-align-items: flex-start;
-justify-content: center;
-word-wrap: break-word;
-}
-.Products2 .list div a{
-    font-weight: bold;
-    color: #0067B8;
-    text-decoration: none;
-} 
-.Products2 .list div i{
-    color: #0067B8;
-}
-.list-last{
-    margin-top: 30px;
-}
-.game{
-    position: relative;
-}
-.game img{
-    width: 100vw;
-}
-
-.xbox{
-    position: absolute;
-    top: 30%;
-    left: 8%;
-}
-.xbox h2{
-    color: white;
-    font-weight: 900;
-    font-size: 50px;
-}
-.xbox p{
-    color: white;
-    word-wrap: break-word;
-}
-.join{
-    margin-top: 10px;
-    color: white;
-    background-color: #0067B8;
-    border: 1px solid #0067B8;
-    border-radius: 5%;
-    position: absolute;
-    padding: 7px;
-    font-weight: 600;
-}
-.business{
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom:-10px;
-}
-.Follow{
-    display: flex;
-    width: 100%;
-    margin-top: 40px;
-    margin-left: 70px;
-}
-.Follow div{
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-
-}
-.back{
-    align-items: center;
-    display: flex;
-    justify-content: right;
-    border-radius: 5%;
-}
-
-.back-top{
-    position: -webkit-sticky; 
-    display: flex;
-    justify-content: right;
-    border: 1px solid #D9D9D9;
-    background-color: #D9D9D9;
-    color: black;
-    font-weight: 600;
-    padding: 10px;
-    margin-right: 20px;
-    align-items: center;
-    gap: 0.5em;
+footer a{
+    color:rgba(29, 29, 29, 0.655);
     text-decoration: none;
 }
-.last-section{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: #F2F2F2;
-    justify-content: first baseline;
-    text-align: initial;
+footer section{
+    margin: 50px 100px 0;
+    font-size: 0.7rem;
 }
-.Footer{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin-left: 5rem;
-    font-size: 15px;    
+footer section span{
+    padding:10px;
 }
-.Footer ul li a{
-    text-decoration: none;
-    color: #616161;
-    word-wrap: break-word;
-    font-size: small;
+footer .left{
+    float:left;
 }
-
-.bg{
-    margin-top: 30px;
-    background-color: #F2F2F2;
-    width: 100%;
-    height: 70px;
+footer .right{
+    float:right;
 }
-.same{
-  font-weight: 700;
-  padding-bottom: 10px;
-
-}
-.foot{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: #F2F2F2;
-}
-.fa-earth-americas{
-  
-justify-content: center;
-align-items: center;
-}
-.india{
-    width: 30%;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    font-size: small;
-}
-.privacy{
-    width: 20%;
-    font-size: small;
-}
-.lts{
-    width: 50%;
-    display: flex;
-    font-size: small;
-    justify-content: right;
-    gap: 10px;
-}
-.lts div{
-    display: flex;
-    justify-content: right;
-}
-.vgt{
-    width: 100%;
-    height: 20px;
-    background-color: #F2F2F2;
-}
-
-
